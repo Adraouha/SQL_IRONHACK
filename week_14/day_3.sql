@@ -1,10 +1,3 @@
--- IRONHACK - DATA ANALYTICS / WEB DEV - BOOTCAMP
--- SEMANA 14 - DÍA 3: Diagramas EER, Forward Engineering y Consultas Avanzadas
--- Base de Datos: libreria
--- Entidades: autor (1) <---> (N) libro (Relación 1 a Muchos, Non-identifying)
--- Herramientas: MySQL Workbench / DBeaver / MySQL 8
--- =============================================================================
-
 -- =============================================================================
 -- CONCEPTOS TEÓRICOS: DIAGRAMAS EER & FORWARD ENGINEERING
 -- =============================================================================
@@ -17,7 +10,6 @@
 -- 3. Forward Engineering (Database > Forward Engineer en Workbench):
 --    Genera automáticamente el script DDL con las tablas, restricciones (constraints)
 --    y claves foráneas, ahorrando la escritura manual de ALTER TABLEs.
--- =============================================================================
 
 
 -- =============================================================================
