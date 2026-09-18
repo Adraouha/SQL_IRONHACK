@@ -1,19 +1,5 @@
 -- =============================================================================
--- IRONHACK - DATA ANALYTICS / WEB DEV - BOOTCAMP
--- SEMANA 14 - DÍA 1: Fundamentos de SQL (DDL, DML, DQL)
--- Herramientas recomendadas: MySQL, DBeaver / phpMyAdmin / Paiza.io
--- =============================================================================
-
--- =============================================================================
--- PARTE 1: CREAR BD Y TABLA LIBRE + CONSULTAS BÁSICAS
--- Tema elegido: Tienda de Tecnología y Gadgets (productos)
--- Requisitos:
---   - Al menos 1 id autoincrementable
---   - Un dato VARCHAR
---   - Un dato numérico (DECIMAL / INT)
---   - Una fecha (DATE)
---   - Al menos 5 registros
---   - Consultas: SELECT, WHERE, ORDER BY, DESC, >, <, =, LIKE con % y _
+ Tienda de Tecnología y Gadgets (productos)
 -- =============================================================================
 
 -- 1.1 Creación de la base de datos
