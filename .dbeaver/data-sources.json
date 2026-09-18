@@ -1,0 +1,45 @@
+{
+	"folders": {
+		"week_14": {}
+	},
+	"connections": {
+		"mysql8-1a0b32111fc-3a2096247d1781e9": {
+			"provider": "mysql",
+			"driver": "mysql8",
+			"name": "localhost",
+			"save-password": true,
+			"configuration": {
+				"host": "localhost",
+				"port": "3306",
+				"url": "jdbc:mysql://localhost:3306/",
+				"configurationType": "MANUAL",
+				"type": "dev",
+				"closeIdleConnection": false,
+				"provider-properties": {
+					"@dbeaver-show-all-dbs@": "true"
+				},
+				"auth-model": "native"
+			},
+			"extensions": {
+				"dashboards": "\u003cdashboardList\u003e\u003cdashboards id\u003d\"default\" name\u003d\"Default\"\u003e\u003cview/\u003e\u003cdashboard id\u003d\"database:mysql.sessions\" viewType\u003d\"timeseries\" index\u003d\"0\" widthRatio\u003d\"1.5\" updatePeriod\u003d\"2000\" maxItems\u003d\"300\" maxAge\u003d\"1800000\" legendVisible\u003d\"true\" gridVisible\u003d\"false\" domainTicksVisible\u003d\"true\" rangeTicksVisible\u003d\"true\" description\u003d\"Shows session grouped by command\"/\u003e\u003c/dashboards\u003e\u003c/dashboardList\u003e"
+			}
+		}
+	},
+	"connection-types": {
+		"dev": {
+			"name": "Development",
+			"color": "255,255,255",
+			"colorDark": "255,255,255",
+			"description": "Regular development database",
+			"auto-commit": true,
+			"confirm-execute": false,
+			"confirm-data-change": false,
+			"smart-commit": false,
+			"smart-commit-recover": true,
+			"auto-close-transactions": true,
+			"close-transactions-period": 1800,
+			"auto-close-connections": true,
+			"close-connections-period": 14400
+		}
+	}
+}
