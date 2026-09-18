@@ -9,8 +9,6 @@ import java.util.Scanner;
 
 /**
  * =============================================================================
- * IRONHACK - BOOTCAMP DATA & WEB
- * SEMANA 15 - DÍA 3: Conexión JDBC (Java Data Base Connectivity) con MySQL
  * 
  * LAB 1: Conexión básica, creación de tabla y operaciones CRUD estándar.
  * LAB 2: Inserción de datos dinámicos solicitados al usuario mediante Scanner.
@@ -25,7 +23,7 @@ public class LibreriaJDBC {
 
     public static void main(String[] args) {
         System.out.println("=================================================");
-        System.out.println("   PROYECTO LIBRERIA JDBC - IRONHACK (DAY 3)     ");
+        System.out.println("   PROYECTO LIBRERIA JDBC - HASSAN ADRAOU   ");
         System.out.println("=================================================");
 
         try (Connection conexion = DriverManager.getConnection(URL, USUARIO, PASSWORD);
