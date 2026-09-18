@@ -1,8 +1,6 @@
 -- =============================================================================
--- IRONHACK - DATA ANALYTICS / WEB DEV - BOOTCAMP
 -- SEMANA 15 - DÍA 4: PreparedStatement en JDBC (Seguridad y Rendimiento)
 -- Base de Datos: tienda_discos
--- Código Java complementario: week_15/PreparedStatementDemo.java
 -- =============================================================================
 
 -- 1. Creación de la base de datos
