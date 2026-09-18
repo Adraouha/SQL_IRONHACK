@@ -1,8 +1,6 @@
 -- =============================================================================
--- IRONHACK - DATA ANALYTICS / WEB DEV - BOOTCAMP
 -- SEMANA 15 - DÍA 3: Conexión JDBC (Java Database Connectivity) con MySQL
 -- Base de Datos: libreria_jdbc
--- Código Java complementario: week_15/LibreriaJDBC.java
 -- =============================================================================
 
 -- 1. Creación de la base de datos para el proyecto Java JDBC
