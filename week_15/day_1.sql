@@ -1,11 +1,8 @@
 -- =============================================================================
--- IRONHACK - DATA ANALYTICS / WEB DEV - BOOTCAMP
 -- SEMANA 15 - DÍA 1: Tablas Puente (Relaciones N:M), Timestamps y Export/Import
--- Herramientas: MySQL 8, DBeaver / phpMyAdmin / MySQL Workbench
 -- =============================================================================
-
 -- =============================================================================
--- PARTE 1: TABLA-PUENTE - PLATAFORMA DE PODCASTS
+-- TABLA-PUENTE - PLATAFORMA DE PODCASTS
 -- Concepto:
 --   ¿Cómo relacionar Usuarios y Podcasts de forma que un usuario pueda descargarse
 --   muchos podcasts y un podcast pueda ser descargado por muchos usuarios,
