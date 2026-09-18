@@ -1,11 +1,9 @@
 -- =============================================================================
--- IRONHACK - DATA ANALYTICS / WEB DEV - BOOTCAMP
 -- SEMANA 15 - DÍA 2: Dominio de JOINs (INNER, LEFT, RIGHT, FULL OUTER) y Gestión de NULLs
--- Herramientas: MySQL 8, DBeaver
 -- =============================================================================
 
 -- =============================================================================
--- PARTE 1: BASE DE DATOS - CLÍNICA VETERINARIA (DUEÑOS Y MASCOTAS)
+-- BASE DE DATOS - CLÍNICA VETERINARIA (DUEÑOS Y MASCOTAS)
 -- Concepto clave:
 --   - Tabla Madre: `duenio`
 --   - Tabla Hija: `mascota` (con clave foránea 'duenio_id' que PERMITE NULLs)
