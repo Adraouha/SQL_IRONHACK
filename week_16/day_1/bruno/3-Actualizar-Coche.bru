@@ -1,0 +1,30 @@
+meta {
+  name: 3. Actualizar Coche (PUT)
+  type: http
+  seq: 3
+}
+
+put {
+  url: {{baseUrl}}/api/coches/1
+  body: json
+  auth: none
+}
+
+headers {
+  Content-Type: application/json
+}
+
+body:json {
+  {
+    "marca": "Seat",
+    "modelo": "Ibiza FR 1.5 TSI",
+    "matricula": "1234-ABC",
+    "precio": 17800.0
+  }
+}
+
+assert {
+  res.status: eq 200
+  res.body.modelo: eq Ibiza FR 1.5 TSI
+  res.body.precio: eq 17800.0
+}
