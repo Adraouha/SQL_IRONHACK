@@ -1,0 +1,44 @@
+meta {
+  name: 1. Crear Coche (POST)
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{baseUrl}}/api/coches
+  body: json
+  auth: none
+}
+
+headers {
+  Content-Type: application/json
+}
+
+body:json {
+  {
+    "marca": "Cupra",
+    "modelo": "Formentor VZ",
+    "matricula": "BRU-{{matriculaDinamica}}",
+    "precio": 45000.0
+  }
+}
+
+script:pre-request {
+  const randomNum = Math.floor(1000 + Math.random() * 9000);
+  bru.setVar("matriculaDinamica", randomNum);
+}
+
+script:post-response {
+  if (res.body && res.body.id) {
+    bru.setVar("cocheId", res.body.id);
+    bru.setVar("cocheMatricula", res.body.matricula);
+  }
+}
+
+assert {
+  res.status: eq 201
+  res.body.id: isDefined
+  res.body.marca: eq Cupra
+  res.body.modelo: eq Formentor VZ
+  res.body.precio: eq 45000.0
+}
