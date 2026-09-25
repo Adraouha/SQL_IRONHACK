@@ -14,10 +14,14 @@
 				"url": "jdbc:mysql://localhost:3306/",
 				"configurationType": "MANUAL",
 				"type": "dev",
+				"closeIdleConnection": false,
 				"provider-properties": {
 					"@dbeaver-show-all-dbs@": "true"
 				},
 				"auth-model": "native"
+			},
+			"extensions": {
+				"dashboards": "\u003cdashboardList\u003e\u003cdashboards id\u003d\"default\" name\u003d\"Default\"\u003e\u003cview/\u003e\u003cdashboard id\u003d\"database:mysql.sessions\" viewType\u003d\"timeseries\" index\u003d\"0\" widthRatio\u003d\"1.5\" updatePeriod\u003d\"2000\" maxItems\u003d\"300\" maxAge\u003d\"1800000\" legendVisible\u003d\"true\" gridVisible\u003d\"false\" domainTicksVisible\u003d\"true\" rangeTicksVisible\u003d\"true\" description\u003d\"Shows session grouped by command\"/\u003e\u003c/dashboards\u003e\u003c/dashboardList\u003e"
 			}
 		}
 	},

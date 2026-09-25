@@ -1,0 +1,47 @@
+meta {
+  name: 4. Crear Coche (POST)
+  type: http
+  seq: 4
+}
+
+post {
+  url: {{baseUrl}}/api/coches
+  body: json
+  auth: none
+}
+
+headers {
+  Content-Type: application/json
+}
+
+body:json {
+  {
+    "marca": "Toyota",
+    "modelo": "Auris",
+    "matricula": "BRU-{{matriculaDinamica}}",
+    "precio": 33254.78,
+    "marcaId": {
+      "id": {{marcaId}}
+    }
+  }
+}
+
+script:pre-request {
+  const randomNum = Math.floor(1000 + Math.random() * 9000);
+  bru.setVar("matriculaDinamica", randomNum);
+}
+
+script:post-response {
+  if (res.body && res.body.id) {
+    bru.setVar("cocheId", res.body.id);
+    bru.setVar("cocheMatricula", res.body.matricula);
+  }
+}
+
+assert {
+  res.status: eq 201
+  res.body.id: isDefined
+  res.body.marca: eq Toyota
+  res.body.modelo: eq Auris
+  res.body.precio: eq 33254.78
+}

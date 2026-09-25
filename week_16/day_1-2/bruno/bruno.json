@@ -1,0 +1,9 @@
+{
+  "version": "1",
+  "name": "Coches JPA - Bruno Collection",
+  "type": "collection",
+  "ignore": [
+    "node_modules",
+    ".git"
+  ]
+}

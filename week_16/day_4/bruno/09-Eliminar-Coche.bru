@@ -1,0 +1,15 @@
+meta {
+  name: 9. Eliminar Coche (DELETE)
+  type: http
+  seq: 9
+}
+
+delete {
+  url: {{baseUrl}}/api/coches/{{cocheId}}
+  body: none
+  auth: none
+}
+
+assert {
+  res.status: eq 204
+}

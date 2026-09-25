@@ -1,0 +1,17 @@
+meta {
+  name: 4. Obtener Coche Por Matricula (GET)
+  type: http
+  seq: 4
+}
+
+get {
+  url: {{baseUrl}}/api/coches/matricula/{{cocheMatricula}}
+  body: none
+  auth: none
+}
+
+assert {
+  res.status: eq 200
+  res.body.matricula: eq {{cocheMatricula}}
+  res.body.id: isDefined
+}

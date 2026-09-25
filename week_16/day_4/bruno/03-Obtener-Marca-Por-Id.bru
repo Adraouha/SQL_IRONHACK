@@ -1,0 +1,18 @@
+meta {
+  name: 3. Obtener Marca Por ID (GET)
+  type: http
+  seq: 3
+}
+
+get {
+  url: {{baseUrl}}/api/marcas/{{marcaId}}
+  body: none
+  auth: none
+}
+
+assert {
+  res.status: eq 200
+  res.body.id: isDefined
+  res.body.nombre: isDefined
+  res.body.coches: isDefined
+}
